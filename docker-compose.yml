@@ -10,8 +10,8 @@ services:
     depends_on:
       - db
   db:
-    image: mariadb
-    container_name: mariadb
+    image: mariadb:latest
+    container_name: mariadb:latest
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: mydb
